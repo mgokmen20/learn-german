@@ -1,0 +1,297 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  flex-direction: column
+}
+
+.container {
+  height: 600px;
+  width: 748px;
+  display: grid;
+  grid-template-rows: 50px repeat(7, 1fr) 40px;
+  grid-template-columns: 60px repeat(6, 1fr);
+  background-color: aliceblue;
+  gap: 2px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-rows: 50px 25px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(4, 170, 247);
+  justify-content: center;
+  display: block;
+}
+
+.white {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.yellow {
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+.orange {
+  background-color: orange;
+  border: 1px solid black;
+}
+
+.blue {
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.green {
+  background-color: green;
+  border: 1px solid black;
+}
+
+.black {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.dice {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 50%;
+
+}
+
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(139, 135, 135);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.two {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(139, 135, 135);
+  margin-top: 20px;
+  padding: 5px;
+  background-color: white;
+}
+
+.two>.item2 {
+  grid-area: 3/3;
+}
+
+.three {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(139, 135, 135);
+  margin-top: 20px;
+  padding: 5px;
+  background-color: white;
+}
+
+.three>.item2 {
+  grid-area: 2/2/3/3;
+}
+
+.three>.item3 {
+  grid-area: 3/3/3/3;
+}
+
+.four {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(139, 135, 135);
+  margin-top: 20px;
+  padding: 5px;
+  background-color: white;
+}
+
+.four>.item1 {
+  grid-area: 1/1/2/2;
+}
+
+.four>.item2 {
+  grid-area: 1/3/2/4;
+}
+
+.four>.item3 {
+  grid-area: 3/1/4/2;
+}
+
+.four>.item4 {
+  grid-area: 3/3/4/4;
+}
+
+.five {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(139, 135, 135);
+  margin-top: 20px;
+  padding: 5px;
+  background-color: white;
+}
+
+.five>.item1 {
+  grid-area: 1/1/2/2;
+}
+
+.five>.item2 {
+  grid-area: 1/3/2/4;
+}
+
+.five>.item3 {
+  grid-area: 3/1/4/2;
+}
+
+.five>.item4 {
+  grid-area: 3/3/4/4;
+}
+
+.five>.item5 {
+  grid-area: 2/2/3/3;
+}
+
+.six {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(139, 135, 135);
+  margin-top: 20px;
+  padding: 5px;
+  background-color: white;
+}
+
+.six>.item1 {
+  grid-area: 1/1/2/2;
+}
+
+.six>.item2 {
+  grid-area: 1/3/2/4;
+}
+
+.six>.item3 {
+  grid-area: 2/1/3/2;
+}
+
+.six>.item4 {
+  grid-area: 2/3/3/4;
+}
+
+.six>.item5 {
+  grid-area: 3/1/3/3;
+}
+
+.six>.item6 {
+  grid-area: 3/3/4/4;
+}
+
+
+.paragraph {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  height: 100%;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+
+}
+
+.paragraph:hover {
+  background-color: blueviolet;
+  color: white;
+  transform: scale(0.8);
+  border-radius: 5%;
+  
+}
+
+.buton {
+  height: 50px;
+  width: 100px;
+  font-size: 1.5rem;
+  padding: 30px;
+  text-align: center;
+  line-height: 0px;
+  background-color: darkgreen;
+  grid-area: span 1/1;
+  border: 2px solid magenta;
+  border-radius: 10px;
+  color: white;
+  transition: 0.5s ease;
+  
+}
+
+.buton:hover {
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  /* transform: scale(0.8); */
+  /* transform: rotateY(360deg); */
+  transform: rotate(360deg) scale(1.3) translate(10px);
+  
+}
+
+.score {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 300px;
+  font-size: 2rem;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(238, 235, 201);
+  grid-column: span 1/3;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.coder {
+  text-align: right;
+  grid-area: 4/2/4/4;
+  color: crimson;
+  font-size: small;
+}
+
+.total {
+  color: red;
+}
+
